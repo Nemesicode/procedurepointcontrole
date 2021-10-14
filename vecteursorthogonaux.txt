@@ -1,0 +1,23 @@
+// Calcul du produit scalaire de 2 vecteurs  
+// materialises par des vecteurs de reels    
+  
+ fonction dotproduct(v1,v2) : reel
+  Donnees v(k) : Tab [N,M] de reel     // v1 premier vecteur de reels
+          v(l) : Tab [N,M] de reel     // v2 second vecteur de reels 
+ var i : reel   
+ var j : reel               // i,j variables indice de boucle pour 
+ var k : reel               // k,l variables indice de boucle pour 
+ var l : reel 
+ var ps : reel              // ps variable resultat calcul produit scalaire               
+ ps := 0.0
+ pour i de 0 à N-1 faire
+ pour j de 0 a M-1 faire
+ pour k de 0 à n-1 faire
+ pour l de 1 a n faire
+ ps := ps + v(k)[i]*v(l)[j]
+ si v(k)[i]*v(l)[j]==0
+ ecrire ('les deux vecteurs sont orthogonaux')
+ finsi
+ finpour
+ fin
+

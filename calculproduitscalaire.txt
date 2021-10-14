@@ -1,0 +1,14 @@
+// Calcul du produit scalaire de 2 vecteurs  
+// materialises par des vecteurs de reels    
+  
+ procedure dotproduct(v1,v2) : reel
+  Donnees v1 : vecteur [N,M] de reel     // v1 premier vecteur de reels
+          v2 : vecteur [N,M] de reel     // v2 second vecteur de reels 
+ var i : reel   
+ var j : reel               // i,j variables indice de boucle pour 
+ var ps : reel              // ps variable cumul resultat               
+ ps := 0.0
+ pour i de 0 à N-1 faire
+ pour j de 0 a M-1 faire
+ ps := ps + v1[i]*v2(j]
+ fin action
